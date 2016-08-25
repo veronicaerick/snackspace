@@ -117,36 +117,36 @@ class UserAttraction (db.Model):
 ##############################################################################
 # Helper functions
 
-def seed_once(app):
-	query1= """ 
-	SELECT count(relname)
-	FROM pg_class
-	WHERE relname='userattractions'
-	"""
-	db_cursor = db.session.execute(query1)
-	row = db_cursor.fetchone()
-	if row[0] == 0:
-		db.create_all()
+# def seed_once(app):
+# 	query1= """ 
+# 	SELECT count(relname)
+# 	FROM pg_class
+# 	WHERE relname='userattractions'
+# 	"""
+# 	db_cursor = db.session.execute(query1)
+# 	row = db_cursor.fetchone()
+# 	if row[0] == 0:
+# 		db.create_all()
 
-def seed_force(app):
-	db.drop_all
+# def seed_force(app):
+# 	db.drop_all
 
-def connect_to_db(app, db_uri=None):
-	"""Connect the database to our Flask app."""
+# def connect_to_db(app, db_uri=None):
+# 	"""Connect the database to our Flask app."""
 
-	# Configure to use our PostgreSQL database
-	# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///project'
-	app.config['SQLALCHEMY_DATABASE_URI'] = db_uri or 'postgres:///project'
-	db.app = app
-	db.init_app(app)
-	seed_once(app)
+# 	# Configure to use our PostgreSQL database
+# 	# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///project'
+# 	app.config['SQLALCHEMY_DATABASE_URI'] = db_uri or 'postgres:///project'
+# 	db.app = app
+# 	db.init_app(app)
+# 	seed_once(app)
 
-if __name__ == "__main__":
-	# As a convenience, if we run this module interactively, it will leave
-	# you in a state of being able to work with the database directly.
+# if __name__ == "__main__":
+# 	# As a convenience, if we run this module interactively, it will leave
+# 	# you in a state of being able to work with the database directly.
 
-	connect_to_db(app)
-	print "Connected to DB."
+# 	connect_to_db(app)
+# 	print "Connected to DB."
 
 #  ellen = User(firstname="ellen", lastname="blakeley", email="eb@gmail.com", password="123", phone=1234567, zipcode=123456)
 

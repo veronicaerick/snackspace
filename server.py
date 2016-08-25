@@ -14,8 +14,8 @@ import yelp_results
 import json
 
 ############################################# IMPORTED MODEL TABLES TO ROUTES
-from model import User, Event, Attraction, UserEvent, UserAttraction
-from model import connect_to_db, db
+# from model import User, Event, Attraction, UserEvent, UserAttraction
+# from model import connect_to_db, db
 
 ##############################################################################
 
@@ -92,8 +92,8 @@ if __name__ == "__main__":
 	# that we invoke the DebugToolbarExtension
 	
 
-	connect_to_db(app, os.environ.get("DATABASE_URL"))
-	db.create_all(app=app)
+	# connect_to_db(app, os.environ.get("DATABASE_URL"))
+	# db.create_all(app=app)
 
 	DEBUG = "NO_DEBUG" not in os.environ
 	PORT = int(os.environ.get("PORT", 5000))
