@@ -40,7 +40,7 @@ p {
 
 .search {
     height: 700px !important;
-    width: 1170px !important;
+   /* width: 1170px !important;*/
 }
 
 #submit-search {
@@ -113,7 +113,7 @@ p {
 }
 
 .container {
-    width: 1300px;
+    width: 900px;
     background-image: static;
 }
 
