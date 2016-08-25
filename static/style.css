@@ -1,8 +1,5 @@
 body {
-    padding-top:10px;
-    background-image: url(images/sunset-bokeh.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
+  background-image: url('/static/images/restaurant.png');
 }
 
 input {
@@ -16,14 +13,21 @@ a {
     font-family: 'MANIFESTO';
     font-weight: bold;
     font-size: 15px;
-    text-shadow: 1px 1px 1px skyblue;
+    text-shadow: 1px 1px 1px black;
+    color: white;
 }
 
 p {
     font-family: 'MANIFESTO';
 }
 
-/*MODALS*/
+.parent {
+  width: 100%;
+}
+
+.nav {
+  padding-top: 10px;
+}
 
 .modal-info {
     border: 1.5px solid skyblue;
@@ -34,7 +38,6 @@ p {
     color: black;
 }
 
-/*Search and title*/
 .search {
     height: 700px !important;
     width: 1170px !important;
@@ -42,21 +45,22 @@ p {
 
 #submit-search {
     font-family: 'MANIFESTO';
-    font-size: 20px;
+    font-size: 15px;
     text-transform: capitalize;
-    text-shadow: 2px 2px 4px skyblue;
-    color: white;
+    text-shadow: 1px 1px 1px black;
+    color: grey;
 }
 
 #title {
     font-family: 'MANIFESTO';
-    font-size: 90px;
+    font-size: 60px;
     text-transform: capitalize;
     font-weight: 900;
     height: 40px;
     text-shadow: 5px 5px 5px black;
     text-align: center;
     color: white;
+    margin: 0 auto;
     
 }
 
@@ -65,6 +69,8 @@ p {
   font-weight: medium;
   text-align: center;
   color: white;
+  padding-top: 20px;
+  vertical-align: center;
 }
 
 .vertical-align {
@@ -73,6 +79,7 @@ p {
 
 .main-title {
     height:180px;
+    padding-top: 100px;
 }
 
 .info-parent {
@@ -85,11 +92,13 @@ p {
 .info-holder {
     width: 300px;
     padding: 20px;
-    margin-left: 160px;
+    margin:0 auto;
     height: 100px;
     margin-top: 35px;
     font-family: 'MANIFESTO';
     color: black;
+    margin: 0 auto;
+    padding-left: 50px;
 }
 .submit {
     width: 250px;
@@ -100,10 +109,7 @@ p {
 
 .parent-submit {
     margin: auto;
-}
-
-.menu {
-    float: left;
+    padding: 30px;
 }
 
 .container {
@@ -139,7 +145,7 @@ margin-bottom: 1%;}
 }
 
 .attraction-results {
-    background-color: #A0CBEE;
+    background-image: url('/static/images/stardust.png');
     border: white 1px solid;
     width: 400px;
     height: 350px;
@@ -153,6 +159,14 @@ margin-bottom: 1%;}
     font-size: 14px;
     border-radius: 25px;
     font-family: 'Arvo'
+}
+
+.saveAttractionModalBtn {
+    background-color:white;
+    border-radius: 8px;
+    height: 30px;
+    width: 40px;
+
 }
 
 
@@ -186,12 +200,11 @@ margin-bottom: 1%;}
   height:480px;
 }
 
-
 .header {
-    padding-top:50px;
+    padding-top:10px;
     text-align: center;
-     font-family: 'MANIFESTO';
-     color: white;
+    text-transform: capitalize;
+    font-family: 'MANIFESTO';
 }
 
 .calendar {
@@ -209,8 +222,7 @@ margin-bottom: 1%;}
 
 .fa-yelp {
     color: red;
-    float:left;
-    padding: 5px;
+    padding-bottom: 10px;
 }
 
 /*results page*/
@@ -229,11 +241,16 @@ margin-bottom: 1%;}
 }
 .btn.btn-primary:hover {
     color:white;
-    background-color: skyblue;
+    background-image: url("/static/images/restaurant.png");
     border-color: lightgrey;
 }
 .btn.btn-primary:focus {
     background-color: #f00;
+}
+
+.triggerAttModal {
+      background-image: url("/static/images/restaurant.png");
+
 }
 
 /*Twilio*/
@@ -297,9 +314,4 @@ margin-bottom: 1%;}
 
 :-ms-input-placeholder {  
    color: black;  
-}
-
-
-.delete-ev {
-  float: right;
 }

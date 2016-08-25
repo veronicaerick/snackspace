@@ -43,6 +43,7 @@ $('.saveAttractionModalBtn').click(addAttraction);
 
 
 
+
 function makeAttModalMap(evt){
   var resultId = $(this).data('attractionId');
   console.log(resultId);

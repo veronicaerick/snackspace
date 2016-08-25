@@ -20,11 +20,11 @@ function implode(){
   var results = $( ".event-results" );
   $( ".event-results" ).wrapAll( "<div class='new' />");
 }
-setTimeout(implode, 1000);
+setTimeout(implode, 1);
  </script>
 
 
-<div class="parent" style="background-image:url(static/img/bridgebokeh.jpg);background-size:100%; top right no-repeat; background-attachment:fixed;"></div>     
+<div class="parent"></div>     
 <h1 class ="header"> Results for {{location}}: </h1>
 
  {% for result in yelp_result %}
@@ -59,8 +59,8 @@ setTimeout(implode, 1000);
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal"    ><span class="glyphicon glyphicon-remove"></span>Close</button      >
-                                      <a href="{{ result.url }}"><i class="fa fa-yelp" aria-hidden="true"></i></a>
-                                        <button type="button" class="btn btn-primary saveAttractionModalBtn" data-id="{{ result.id }}" data-name="{{ result.name }}" data-location="{{ result.location }}" data-longitude="{{ result.longitude }}" data-latitude="{{ result.latitude }}" data-rating="{{ result.rating }}" data-review-count="{{ result.review_count }}" data-url="{{ result.url}}" data-img="{{ result.image }}" data-phone="{{ result.phone }}"><span class="glyphicon glyphicon-heart"></span> Save</button>
+                                     
+                                        <a href="{{ result.url }}" class="btn btn-default saveAttractionModalBtn"><i class="fa fa-yelp" aria-hidden="true"></i></a>
                         </div>
                     </div>
                   </div>
