@@ -24,8 +24,12 @@ setTimeout(implode, 1);
  </script>
 
 
-<div class="parent"></div>     
+<div class="parent"></div>
+<a href="http://snackspace.herokuapp.com/"><div class="arrow hvr-grow ">
+                    <i class="fa fa-angle-double-left" aria-hidden="true" style="font-size: 30px;"><span style="font-family:manifesto; font-size:15px; vertical-align:middle;">  start over</span></i>
+                </div> </a>
 <h1 class ="header"> Results for {{location}}: </h1>
+
 
  {% for result in yelp_result %}
   <div class="attraction-results">
