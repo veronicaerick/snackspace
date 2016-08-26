@@ -1,5 +1,14 @@
 "use strict";
 ////////////////// ADD ATTRACTION to database///////////////////////////
+ $(document).ready(function() {
+  
+  setTimeout(function(){
+    $('body').addClass('loaded');
+    $('h1').css('color','#222222');
+  }, 3000);
+  
+});
+
 $(document).ready(function(){
 
 
@@ -7,6 +16,7 @@ console.log("JS Connected");
 function addAttractionSuccess (result) {
   console.log("added");
 }
+
 
 function addAttraction (evt) {
   var attractionId = $(this).data('id');
@@ -77,5 +87,5 @@ function populateEvModal(evt){
 
 $('.triggerEvModal').on('click', populateEvModal);
 
-/////////////////// Change Heart Color for SAVE /////////////////////////////
 });
+

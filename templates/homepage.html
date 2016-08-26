@@ -67,7 +67,7 @@ if (datefield.type!="date"){ //if browser doesn't support input type="date", ini
         <div class="container">
               <div class="main-title">
              <!--    <header> -->
-                <h1 id="title">Pursuit of HOPPiNESS</h1>
+                <h1 id="main-title">Pursuit of HOPPiNESS</h1>
               <!-- </header> -->
                   <p class="tag">hop your heart out.</p>
                     <div class="row">
@@ -77,12 +77,14 @@ if (datefield.type!="date"){ //if browser doesn't support input type="date", ini
                               <div class="info-holder">
 
 
-                                    <input style="color:black; opacity: 0.7;" type="text" id="location" placeholder="Enter a location:" name="location">
+                                    <input style="color:black; opacity: 0.7;" type="text" id="location" name="location" required placeholder="Enter a location:"
+    oninvalid="this.setCustomValidity('Enter a Destination: City, State or Country. Dream Big!')"
+    oninput="setCustomValidity('')">
                                    
 
                                 <div class="parent-submit">
                                 <div class="submit">
-                                  <input class="c-button b-60 bg-white hv-orange" id="submit-search" type="submit" value="search now"/>
+                                  <input class="c-button b-60 bg-white hv-orange" id="submit-search" type="submit" value="go now"/>
                                    </div>
                                </div>
                               </div>
