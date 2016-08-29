@@ -56,6 +56,7 @@ p {
     border-radius: 2px;
     font-weight: bold;
     border: 2px solid white;
+    margin-left:16px; 
 }
 
 #submit-search:hover {
