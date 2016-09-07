@@ -13,7 +13,7 @@ yelp_api = YelpAPI(consumer_key, consumer_secret, token, token_secret)
 
 def get_business_results(location, term="beer"):
     # create a query with users location, term and limit results to n
-    search_response = yelp_api.search_query(location=location, term="beer", limit=12)
+    search_response = yelp_api.search_query(location=location, term="beer", limit=15)
     # contain responses from yelp
     responses = []
     # iterate through 'businesses' response from yelp, append each value needed to
